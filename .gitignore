@@ -2,3 +2,4 @@
 *.tsbuildinfo
 /test-results
 /test-archives
+/storybook-archives
