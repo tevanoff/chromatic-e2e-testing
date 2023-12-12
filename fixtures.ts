@@ -1,5 +1,9 @@
 import { test as base, mergeTests } from '@playwright/test';
-import { test as chTest } from '@chromaui/test-archiver';
+import { test as chTest, ChromaticConfig } from '@chromaui/test-archiver';
+
+export const test = chTest.extend<ChromaticConfig & LoggingFixture>({
+  ...partialLoggingFixture,
+});
 
 export interface SomeConfig {
   isSomething?: boolean;
@@ -18,7 +22,7 @@ export const partialLoggingFixture: Parameters<typeof base.extend<LoggingFixture
   },
 };
 
-export const test = base.extend<SomeConfig & LoggingFixture>({
+export const test = chTest.extend<ChromaticConfig & LoggingFixture>({
   ...partialLoggingFixture,
 });
 
