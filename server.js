@@ -1,7 +1,9 @@
-const path = require('path');
-const express = require('express');
+import path from 'path';
+import express from 'express';
+import { fileURLToPath } from 'node:url';
 const app = express();
 const port = 3000;
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 app.get('/', (req, res) => {
   res.send('<body>testing 1 2 3<img src="img"/></body>');
