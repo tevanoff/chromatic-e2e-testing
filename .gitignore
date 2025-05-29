@@ -3,6 +3,7 @@
 /test-results
 /test-archives
 /storybook-archives
+/storybook-static
 
 # yarn 4
 .pnp.*
