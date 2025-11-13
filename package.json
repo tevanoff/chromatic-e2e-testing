@@ -1,5 +1,5 @@
 {
-  "name": "chromatic-e2e-issues",
+  "name": "chromatic-e2e-examples",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -7,9 +7,9 @@
     "start": "node server.js"
   },
   "devDependencies": {
-    "@chromatic-com/playwright": "~0.6.1",
-    "@playwright/test": "^1.37.1",
-    "chromatic": "^11.0.8",
+    "@chromatic-com/playwright": "^0.12.7",
+    "@playwright/test": "^1.53.0",
+    "chromatic": "^13.3.3",
     "express": "^4.18.2",
     "prettier": "^3.0.3"
   },
