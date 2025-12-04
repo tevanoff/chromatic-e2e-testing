@@ -1475,9 +1475,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chromatic-e2e-issues@workspace:.":
+"chromatic-e2e-examples@workspace:.":
   version: 0.0.0-use.local
-  resolution: "chromatic-e2e-issues@workspace:."
+  resolution: "chromatic-e2e-examples@workspace:."
   dependencies:
     "@chromatic-com/playwright": "npm:^0.12.7"
     "@playwright/test": "npm:^1.53.0"
